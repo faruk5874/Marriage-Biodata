@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marriage Biodata Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Marriage Biodata</h1>
+    <form>
+
+      <!-- Basic Info -->
+      <section class="section">
+        <h2>Basic Information</h2>
+
+        <label for="photo-upload">Upload Photo:</label>
+        <input type="file" id="photo-upload" name="photo" accept="image/*" />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="pob">Place of Birth:</label>
+        <input type="text" id="pob" name="pob" />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" />
+
+        <label>Gender:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Male" /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+          <label><input type="radio" name="gender" value="Other" /> Other</label>
+        </div>
+
+        <label for="height">Height:</label>
+        <input type="text" id="height" name="height" placeholder="e.g. 5'7&quot;" />
+
+        <label for="marital-status">Marital Status:</label>
+        <select id="marital-status" name="marital-status">
+          <option value="">Select</option>
+          <option value="Never Married">Never Married</option>
+          <option value="Divorced">Divorced</option>
+          <option value="Widowed">Widowed</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="religion">Religion:</label>
+        <input type="text" id="religion" name="religion" />
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" />
+
+        <label for="blood-group">Blood Group:</label>
+        <select id="blood-group" name="blood-group">
+          <option value="">Select</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="permanent-address">Permanent Address:</label>
+        <textarea id="permanent-address" name="permanent-address" rows="2"></textarea>
+
+        <label for="present-address">Present Address:</label>
+        <textarea id="present-address" name="present-address" rows="2"></textarea>
+      </section>
+
+      <!-- Family Details -->
+      <section class="section">
+        <h2>Family Details</h2>
+
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" />
+
+        <label for="father-occupation">Father's Occupation:</label>
+        <input type="text" id="father-occupation" name="father-occupation" />
+
+        <label for="mother-name">Mother's Name:</label>
+        <input type="text" id="mother-name" name="mother-name" />
+
+        <label for="mother-occupation">Mother's Occupation:</label>
+        <input type="text" id="mother-occupation" name="mother-occupation" />
+
+        <label for="siblings">Siblings:</label>
+        <input type="text" id="siblings" name="siblings" placeholder="e.g. 2 brothers, 1 sister" />
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <h2>Education</h2>
+        <table class="edu-table">
+          <tr>
+            <th>Qualification</th>
+            <th>Institute</th>
+            <th>Passing Year</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="qualification1" /></td>
+            <td><input type="text" name="institute1" /></td>
+            <td><input type="text" name="year1" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="qualification2" /></td>
+            <td><input type="text" name="institute2" /></td>
+            <td><input type="text" name="year2" /></td>
+          </tr>
+        </table>
+
+        <label for="currently-pursuing">Currently Pursuing:</label>
+        <input type="text" id="currently-pursuing" name="currently-pursuing" />
+
+        <label for="additional-certifications">Additional Certifications:</label>
+        <input type="text" id="additional-certifications" name="additional-certifications" />
+      </section>
+
+      <!-- Profession -->
+      <section class="section">
+        <h2>Profession</h2>
+
+        <label for="current-occupation">Current Occupation:</label>
+        <input type="text" id="current-occupation" name="current-occupation" />
+
+        <label for="annual-income">Annual Income:</label>
+        <input type="text" id="annual-income" name="annual-income" />
+
+        <label for="future-career-plan">Future Career Plan:</label>
+        <textarea id="future-career-plan" name="future-career-plan" rows="3"></textarea>
+      </section>
+
+      <!-- Appearance & Lifestyle -->
+      <section class="section">
+        <h2>Appearance & Lifestyle</h2>
+
+        <label for="complexion">Complexion:</label>
+        <input type="text" id="complexion" name="complexion" />
+
+        <label for="body-type">Body Type:</label>
+        <input type="text" id="body-type" name="body-type" />
+
+        <label for="diet">Diet:</label>
+        <input type="text" id="diet" name="diet" />
+
+        <label for="smoking">Smoking:</label>
+        <select id="smoking" name="smoking">
+          <option value="">Select</option>
+          <option value="No">No</option>
+          <option value="Occasionally">Occasionally</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label for="drinking">Drinking:</label>
+        <select id="drinking" name="drinking">
+          <option value="">Select</option>
+          <option value="No">No</option>
+          <option value="Occasionally">Occasionally</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label for="hobbies-interests">Hobbies/Interests:</label>
+        <textarea id="hobbies-interests" name="hobbies-interests" rows="3"></textarea>
+      </section>
+
+      <!-- Partner Preferences -->
+      <section class="section">
+        <h2>Partner Preferences</h2>
+
+        <label for="partner-age-range">Age Range:</label>
+        <input type="text" id="partner-age-range" name="partner-age-range" placeholder="e.g. 22-28" />
+
+        <label for="partner-height">Height:</label>
+        <input type="text" id="partner-height" name="partner-height" placeholder="e.g. 5'2&quot; - 5'7&quot;" />
+
+        <label for="partner-education">Education:</label>
+        <input type="text" id="partner-education" name="partner-education" />
+
+        <label for="partner-occupation">Occupation:</label>
+        <input type="text" id="partner-occupation" name="partner-occupation" />
+
+        <label for="partner-religion">Religion:</label>
+        <input type="text" id="partner-religion" name="partner-religion" />
+      </section>
+
+      <!-- Additional Details -->
+      <section class="section">
+        <h2>Additional Details</h2>
+
+        <label for="about-me">About Me:</label>
+        <textarea id="about-me" name="about-me" rows="3"></textarea>
+
+        <label for="future-plans">Future Plans:</label>
+        <textarea id="future-plans" name="future-plans" rows="3"></textarea>
+
+        <label for="disabilities-health">Disabilities or Health Issues:</label>
+        <textarea id="disabilities-health" name="disabilities-health" rows="2"></textarea>
+
+        <label for="languages-known">Languages Known:</label>
+        <input type="text" id="languages-known" name="languages-known" />
+
+        <label for="preferred-location">Preferred Location for Settling:</label>
+        <input type="text" id="preferred-location" name="preferred-location" />
+
+        <label for="social-media">Social Media:</label>
+        <input type="text" id="social-media" name="social-media" placeholder="e.g. Facebook, Instagram" />
+      </section>
+
+      <button type="submit">Submit Biodata</button>
+    </form>
+  </div>
+</body>
+</html>
